@@ -71,11 +71,11 @@ class Website3DDemo {
 
     this._LoadAnimatedModelAndPlay(
         './resources/zombie/', 'monkey.fbx',
-        'Falling Flat Impact.fbx', new THREE.Vector3(-20, 40, -20));
+        '', new THREE.Vector3(-20, 40, -20));
 
     this._LoadAnimatedModelAndPlay(
         './resources/zombie/', 'Ch49_nonPBR.fbx',
-        'Front Twist Flip', new THREE.Vector3(20, 0, -20));
+        'Front Twist Flip.fbx', new THREE.Vector3(0, 0, 0));
   
     this._mixers = [];
     this._previousRAF = null;
