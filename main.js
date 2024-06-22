@@ -63,18 +63,27 @@ class Website3DDemo {
 
     this._LoadAnimatedModelAndPlay(
         './resources/zombie/', 'mremireh_o_desbiens.fbx',
-        'walk.fbx', new THREE.Vector3(0, 0, 0));
+        'walk.fbx', new THREE.Vector3(10, 0, 0));
 
        /* this._LoadAnimatedModelAndPlay(
           './resources/zombie/', 'mremireh_o_desbiens.fbx',
           'dance.fbx', new THREE.Vector3(0, 0, 0));*/
+          this._LoadAnimatedModelAndPlay(
+            './resources/zombie/', 'mc.fbx',
+            'ma.fbx', new THREE.Vector3(0, 8, 0));
+
+            this._LoadAnimatedModelAndPlay(
+              './resources/zombie/', 'test.fbx',
+              '', new THREE.Vector3(0, 0, 0));
+   
+
+        this._LoadAnimatedModelAndPlay(
+          './resources/zombie/', 'ground2.fbx',
+          '', new THREE.Vector3(1.52, 0, 0));
+  
 
     this._LoadAnimatedModelAndPlay(
-        './resources/zombie/', 'monkey.fbx',
-        '', new THREE.Vector3(-20, 40, -20));
-
-    this._LoadAnimatedModelAndPlay(
-        './resources/zombie/', 'Ch49_nonPBR.fbx',
+        './resources/zombie/', '02.fbx',
         'Front Twist Flip.fbx', new THREE.Vector3(0, 0, 0));
   
     this._mixers = [];
@@ -90,12 +99,12 @@ class Website3DDemo {
   _AddSkybox() {
     const loader = new THREE.CubeTextureLoader();
     const texture = loader.load([
-      'textures/px.jpg', // Positive X
-      'textures/nx.jpg', // Negative X
-      'textures/py.jpg', // Positive Y
-      'textures/ny.jpg', // Negative Y
-      'textures/pz.jpg', // Positive Z
-      'textures/nz.jpg'  // Negative Z
+      'textures/posx.jpg', // Positive X
+      'textures/negx.jpg', // Negative X
+      'textures/posy.jpg', // Positive Y
+      'textures/negy.jpg', // Negative Y
+      'textures/posz.jpg', // Positive Z
+      'textures/negz.jpg'  // Negative Z
     ]);
     this._scene.background = texture;
   }
